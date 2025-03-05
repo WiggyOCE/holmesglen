@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holmesglen - Update Your Credentials</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            align-items: center;
+        }
+        label {
+            text-align: right;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+        }
+        button {
+            grid-column: span 2;
+            justify-self: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,7 +33,7 @@
 
     <main>
         <form onsubmit="window.location.href='phishing-warning.html'; return false;">
-            <p class="disclaimer">For testing and educational purposes only. Do not enter real information.</p>
+            <p class="disclaimer" style="grid-column: span 2;">For testing and educational purposes only. Do not enter real information.</p>
 
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
