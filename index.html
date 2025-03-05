@@ -3,47 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holmesglen Institute - Update Details</title>
+    <title>Holmesglen - Update Your Credentials</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Holmesglen Institute</h1>
+        <p>Update Your Account Information</p>
+    </header>
 
-    <div class="container">
-        <div class="header">
-            Holmesglen Institute
-            <div class="sub-header">Update Your Account Information</div>
-        </div>
+    <main>
+        <form onsubmit="window.location.href='phishing-warning.html'; return false;">
+            <p class="disclaimer">For testing and educational purposes only. Do not enter real information.</p>
 
-        <p class="notice">For testing and educational purposes only. Do not enter real information.</p>
-
-        <form action="https://example.com/update" method="get"> <!-- Changed to GET -->
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
             <label for="address">Address:</label>
             <input type="text" id="address" name="address" required>
 
             <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" required>
 
-            <label for="student">Student Number:</label>
-            <input type="text" id="student" name="student" required>
+            <label for="student-number">Student Number:</label>
+            <input type="text" id="student-number" name="student-number" required>
 
-            <label for="passport">License/Passport Number:</label>
-            <input type="text" id="passport" name="passport" required>
+            <label for="id-number">License/Passport Number:</label>
+            <input type="text" id="id-number" name="id-number" required>
 
             <button type="submit">Submit</button>
         </form>
 
-        <div class="important">
-            Important: Ensure your details are accurate. Failure to update may limit access.
+        <div class="warning">
+            <p>Important: Ensure your details are accurate. Failure to update may limit access.</p>
         </div>
 
-        <footer>
-            This page is for educational testing purposes only and is not affiliated with Holmesglen.
-        </footer>
-    </div>
+        <div class="error-message">
+            <p>Error: There was an issue with the submitted information. Please try again.</p>
+        </div>
+    </main>
 
+    <footer>
+        <p>This page is for educational testing purposes only and is not affiliated with Holmesglen.</p>
+    </footer>
 </body>
 </html>
-
