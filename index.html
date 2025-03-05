@@ -13,25 +13,27 @@
     </header>
 
     <main>
-        <p class="disclaimer">For testing and educational purposes only. Do not enter real information.</p>
-        
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required>
+        <form onsubmit="window.location.href='phishing-warning.html'; return false;">
+            <p class="disclaimer">For testing and educational purposes only. Do not enter real information.</p>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="student-number">Student Number:</label>
-        <input type="text" id="student-number" name="student-number" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
 
-        <label for="id-number">License/Passport Number:</label>
-        <input type="text" id="id-number" name="id-number" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-        <button type="button" onclick="window.location.href='phishing-warning.html';">Submit</button>
-        
+            <label for="student-number">Student Number:</label>
+            <input type="text" id="student-number" name="student-number" required>
+
+            <label for="id-number">License/Passport Number:</label>
+            <input type="text" id="id-number" name="id-number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
         <div class="warning">
             <p>Important: Ensure your details are accurate. Failure to update may limit access.</p>
         </div>
